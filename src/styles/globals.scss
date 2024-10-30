@@ -1,0 +1,135 @@
+@import "./variables";
+@import "./media-queryes";
+@import "./mixin";
+@import "./button";
+@import "./input";
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-width: 375px;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  color: $black;
+}
+
+body,
+button,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+fieldset,
+figure,
+dl,
+dd,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol,
+fieldset,
+button,
+th,
+td {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button,
+fieldset {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+td,
+th {
+  border: none;
+}
+
+strong,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+address,
+i {
+  font-style: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: top;
+  user-select: none;
+}
+
+svg {
+  display: block;
+}
+
+[tabindex],
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Disable scroll */
+
+.disable-scroll {
+  overflow: hidden;
+}
